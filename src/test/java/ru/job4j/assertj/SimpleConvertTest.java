@@ -43,7 +43,7 @@ class SimpleConvertTest {
     @Test
     void checkMap() {
         SimpleConvert simpleConvert = new SimpleConvert();
-        Map<String, Integer> map = simpleConvert.toMap("Tom", "Bob", "Raf", "Mike", "Leo" );
+        Map<String, Integer> map = simpleConvert.toMap("Tom", "Bob", "Raf", "Mike", "Leo");
         assertThat(map).containsEntry("Bob", 1)
                 .containsKeys("Bob", "Raf", "Mike")
                 .containsValues(1, 2, 3, 4)
